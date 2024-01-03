@@ -1,0 +1,92 @@
+body{
+	display: flex;
+	justify-content: center;
+}
+
+.body{
+	width: 350px;
+	border: 1px solid black;
+	border-radius: 10px;
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 5px 20px;
+	background-color: #d7cc8;
+}
+
+.results{
+	width: 92%;
+	margin: 20px auto;
+	text-align: auto;
+}
+
+#result, #expression{
+	background-color: #607d8b;
+	border: 1px solid black;
+	border-radius: 4px;
+	padding-right: 5px;
+}
+
+#result{
+	height: 50px;
+	font-size: 2em;
+	
+	border-bottom: none;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+#expression{
+	height: 20px;
+	
+	border-top: none;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+
+	color: #263238;
+	overflow: hidden;
+}
+
+.numbers{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.operations, .clears{
+	display: flex;
+	flex-direction: column;
+}
+
+.operations * {
+	font-size: 1.5em;
+}
+
+.clears * {
+	background: #ef5350;
+	color: white;
+}
+
+#AC, #EC{
+	height: 110px;
+}
+
+button {
+	border: none;
+	border-radius: 5px;
+
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+
+	text-align: center;
+	outline: none;
+}
+
+button:active{
+	transform: translateY(2px);
+}
+
+.number, .operation, .equal{
+	background-color: #263238;
+	color: white;
+}
